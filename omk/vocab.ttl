@@ -1,0 +1,17 @@
+@prefix thyp: <https://fragilecampfire.github.io/EXAM_THYP_25-26/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+thyp:Etudiant a rdfs:Class ;
+    rdfs:label "etudiant" .
+
+thyp:Cours a rdfs:Class ;
+    rdfs:label "cours" .
+
+thyp:Evaluation a rdfs:Class ;
+    rdfs:label "evaluation" .
+
+thyp:Note a rdf:Property ;
+    rdfs:label "note" ;
+    rdfs:domain thyp:Evaluation ;
+    rdfs:range rdfs:Literal .
